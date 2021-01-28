@@ -7,16 +7,17 @@
         <meta name="viewport" content="width =device-width, initial-scale =1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     </head>
     <body>
         <section id="banner">
-            <img src="Website Logo.png" class="logo" href="index.html">
+            <a href="index.html"><img src="Website Logo.png" class="logo"></a>
             <div class="banner-text">
                 <h1>Najrishian</h1>
                 <p>The Language of The Desert</p>
                 <div class="banner-btn">
                     <a href="#"><span></span>Start Here</a>
-                    <a href="#"><span></span>Learn More</a>
+                    <a href="about.html"><span></span>Learn More</a>
                 </div>
             </div>
         </section>
@@ -24,11 +25,11 @@
         <div id="sideNav">
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#banner">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#">Chapter 1</a></li>
                     <li><a href="#">Chapter 2</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -90,6 +91,84 @@
             </div>
         </section>
 
+        <!--Services-->
+        <section id="service">
+            <div class="title-text">
+                <p>SERVICES</p>
+                <h1>The Course</h1>
+            </div>
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="writing-1209121_1920.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Writing</h3>
+                        <hr>
+                        <p>In this course, we will teach you the writing system of Najrishian.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="grammar-389907_1920.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Pronounciation</h3>
+                        <hr>
+                        <p>This course will teach you the pronounciations of Najrishian.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="first-1427707_1920.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Chapter 1</h3>
+                        <hr>
+                        <p>In Chapter 1, you will learn basic grammar rules along with phrases and sentences.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="coming-soon-2070393_1920.jpg">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h3>Chapter 2 (Coming Soon!)</h3>
+                        <hr>
+                        <p>In Chapter 2, you will finalize your Najrishian skills!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--footer-->
+
+        <section id="footer">
+            <img src="desert (1).png" class="footer-img">
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1>Contact Us!</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Question Hours</h1>
+                    <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 5pm</p>
+                    <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 12pm to 5pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p>lyleschu1359@gmail.com<i class="fa fa-paper-plane"></i></p>
+                    <p>(970) 466-3684<i class="fa fa-phone"></i></p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube-play"></i>
+                <p>Copyright Learn Najrishian!</p>
+                <div class="icon-copyright">
+                    <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                </div>
+            </div>
+        </section>
+
 
 
 
@@ -110,6 +189,11 @@
                     menu.src = "menu.png";
                 }
             }
+
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	        speed: 700,
+	        speedAsDuration: true
+            });
         </script>
     </body>
 </html>
