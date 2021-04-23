@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learn Najrishian | About</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width =device-width, initial-scale =1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    </head>
+    <body>
+        <section id="banner">
+            <a href="index.html"><img src="Website Logo.png" class="logo"></a>
+            <div class="banner-text">
+                <h1>About</h1>
+                <p>What is Najrishian?</p>
+                <div class="banner-btn">
+                    <a href="#"><span></span>Start Here!</a>
+                    <a href="index.html"><span></span>Home</a>
+                </div>
+            </div>
+        </section>
+
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chapter1.html">Chapter 1</a></li>
+                    <li><a href="#">Chapter 2</a></li>
+                    <li><a href="#footer">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menuBtn">
+            <img src="menu.png" id="menu">
+        </div>
+
+        <!--Features-->
+        <section id="feature">
+            <div class="title-text">
+                <p>FAQ</p>
+                <h1>Najrishian?</h1>
+            </div>
+            <div class="feature-box">
+                <div class="features">
+                    <h1>Bladdein</h1>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa fa-pencil-square-o"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>So you probably saw this and are now wondering where Najrishian
+                                even came from? In a society my friends and I made, we each have
+                                our own kingdom with languages. Basic, Najrishian, and Junglese. 
+                                Basic is the language required to be known, English, and it is the language
+                                of the Continent. Najrishian, the language of the Desert, is an asiatic based
+                                language created by me. And finally, Junglese. A jungle language of grunts
+                                and growls.
+                            </p>
+                        </div>
+                    </div>
+
+                    <h1>What is Najrishian?</h1>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa fa-microphone"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>A desert language that is really easy to learn!
+                            </p>
+                        </div>
+                    </div>
+
+                    <h1>Where do I start?</h1>
+                    <div class="features-desc">
+                        <div class="feature-icon">
+                            <i class="fa fa-list"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>As of now, January 27, 2021, Najrishian is currently under construction.
+                                Do not fear! A preview of the language can be seen in the Chapter 1 page!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="features-img">
+                    <img src="q-and-a-2453376_1920.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section id="footer">
+            <img src="desert (1).png" class="footer-img">
+            <div class="title-text">
+                <p>CONTACT</p>
+                <h1>Contact Us!</h1>
+            </div>
+            <div class="footer-row">
+                <div class="footer-left">
+                    <h1>Question Hours</h1>
+                    <p><i class="fa fa-clock-o"></i>Monday to Friday - 9am to 5pm</p>
+                    <p><i class="fa fa-clock-o"></i>Saturday and Sunday - 12pm to 5pm</p>
+                </div>
+                <div class="footer-right">
+                    <h1>Get In Touch</h1>
+                    <p>lyleschu1359@gmail.com<i class="fa fa-paper-plane"></i></p>
+                    <p>(970) 466-3684<i class="fa fa-phone"></i></p>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube-play"></i>
+                <p>Copyright Learn Najrishian!</p>
+                <div class="icon-copyright">
+                    <p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    menu.src = "close.png";
+                }
+                else{
+                    sideNav.style.right = "-250px";
+                    menu.src = "menu.png";
+                }
+            }
+
+            var scroll = new SmoothScroll('a[href*="#"]', {
+	            speed: 700,
+	            speedAsDuration: true
+            });
+        </script>
+
+    </body>
+</html>
